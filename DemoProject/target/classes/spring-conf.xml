@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	 <bean id="electronics1" class="com.fis.demoproject.model.ElectronicDevice">
+	<property value="101" name="deviceId"></property>
+	<property value="Mobile" name="deviceName"></property>
+	<property value="20000" name="price"></property>
+	<property value="4" name="Rating"></property>
+	<property value="Black" name="color"></property>
+	</bean>
+	<bean id="electronics2" class="com.fis.demoproject.model.ElectronicDevice" autowire="byName">
+	<property value="102" name="deviceId"></property>
+	<property value="Computer" name="deviceName"></property>
+	<property value="60000" name="price"></property>
+	<property value="3" name="Rating"></property>
+	<property value="Black" name="color"></property>
+	</bean>
+
+	<bean id="b" class="com.fis.demoproject.model.Battery">
+		<property name="batteryName" value="Samsung"></property>
+		<property name="power" value="1200"></property>
+	</bean>
+	
+	<bean id="m" class="com.fis.demoproject.model.Memory">
+		<property name = "ramSize" value="256"/>
+	</bean>
+	
+
+
+
+	
+</beans>
